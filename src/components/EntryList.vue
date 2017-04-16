@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="entry-list">
     <ul>
       <li v-for="entry in entries">
         {{entry.date | date}} {{entry.message}}
