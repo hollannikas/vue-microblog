@@ -8,6 +8,7 @@
 <script>
 import EntryList from './EntryList.vue'
 import NewEntry from './NewEntry.vue'
+import moment from 'moment'
 
 export default {
   name: 'blogs',
@@ -23,7 +24,7 @@ export default {
   },
   methods: {
     newMessage: function (message) {
-      this.entries.push({message: message, date: 'date', user: 'default-user'})
+      this.entries.push({message: message, date: moment().format(), user: 'default-user'})
     }
   }
 }

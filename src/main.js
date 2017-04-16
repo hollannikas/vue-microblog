@@ -6,9 +6,16 @@ import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import moment from 'moment'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
+
+Vue.filter('date', function (date) {
+  if (date) {
+    return moment(String(date)).format('DD/DD/YYYY hh:mm')
+  }
+})
 
 /* eslint-disable no-new */
 new Vue({

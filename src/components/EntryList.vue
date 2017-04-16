@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="entry in entries">
-        {{entry.message}}
+        {{entry.date | date}} {{entry.message}}
       </li>
     </ul>
   </div>
