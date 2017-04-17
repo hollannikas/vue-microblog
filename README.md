@@ -1,6 +1,8 @@
 # microblog
 
-> A Vue.js project
+> Playing around with vue2
+
+Uses [microblog-api](https://github.com/hollannikas/microblog-api) as back-end
 
 ## Build Setup
 

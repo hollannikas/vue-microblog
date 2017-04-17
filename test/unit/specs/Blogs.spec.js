@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Blogs from '@/components/Blogs'
 import BootstrapVue from 'bootstrap-vue'
+require('es6-promise').polyfill()
 
 Vue.use(BootstrapVue) // TODO is this the right place?
 
