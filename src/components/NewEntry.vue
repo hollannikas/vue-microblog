@@ -1,8 +1,10 @@
 <template>
   <div id="new-entry">
-    <label id="message-label" for="message">Message:</label>
-    <textarea v-model="message" id="message"></textarea>
-    <button id="send-button" v-on:click="sendMessage">Send</button>
+    <div class="form-group">
+      <label id="message-label" for="message" class="col-2 col-form-label">Message:</label>
+      <textarea v-model="message" id="message" class="form-control" rows="3"></textarea>
+      <b-button id="send-button" v-on:click="sendMessage" variant="primary">Send</b-button>
+    </div>
   </div>
 </template>
 

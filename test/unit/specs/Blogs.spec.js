@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import Blogs from '@/components/Blogs'
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue) // TODO is this the right place?
 
 describe('Blogs.vue', () => {
   it('should contain new entry', () => {

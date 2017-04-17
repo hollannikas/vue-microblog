@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <new-entry v-on:new-message="newMessage"></new-entry>
     <entry-list :entries="entries"></entry-list>
   </div>
